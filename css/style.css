@@ -899,13 +899,6 @@ line-height: 1.2;
             width: 100%;
         }
 
-    }
-
-    @media (max-width: 365px) {
-        .about-img img{
-            width: 90vw;
-        } 
-
         .footer {
             flex-direction: column-reverse;
         }
@@ -914,5 +907,13 @@ line-height: 1.2;
             text-align: center;
             margin-top: 2rem;
         }
+
+    }
+
+    @media (max-width: 365px) {
+        .about-img img{
+            width: 90vw;
+        } 
+
         
     }
