@@ -1,3 +1,6 @@
+
+
+
 // Menu Icon Navbar
 
 let menuIcon= document.querySelector('#menu-icon');
@@ -8,6 +11,19 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navBar.classList.toggle('active');
 }
+
+//Hidden Button
+
+// document.querySelector(".btn").addEventListener("click", function(event) {
+//     event.preventDefault(); // previene la recarga de la página si el botón es un enlace
+//     const hiddenContent = document.getElementById("hiddenContent");
+    
+//     if (hiddenContent.style.display === "none") {
+//         hiddenContent.style.display = "block";
+//     } else {
+//         hiddenContent.style.display = "none";
+//     }
+// });
 
 // scroll interactive
 let sections= document.querySelectorAll('section');
@@ -66,6 +82,8 @@ darkModeIcon.onclick = () => {
     document.body.classList.toggle('dark-mode');
 }
 
+
+
 //Scroll reveal
 
 ScrollReveal({
@@ -78,3 +96,4 @@ ScrollReveal().reveal('.home-content, .heading',{origin:'top'});
 ScrollReveal().reveal('.home-img img, .services-container, .portfolio-box,.video-wrapper, .contact form',{origin:'bottom'});
 ScrollReveal().reveal('.home-content h1, .about-img img',{origin:'left'});
 ScrollReveal().reveal('.home-content h3, home-content p, about-content',{origin:'right'});
+
