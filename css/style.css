@@ -630,7 +630,8 @@ line-height: 1.2;
         }
 
         .home-img img{
-            bottom: 10.1px;
+            bottom: -31px;
+            width: 60vw;
 
         }
     }
@@ -913,7 +914,5 @@ line-height: 1.2;
     @media (max-width: 365px) {
         .about-img img{
             width: 90vw;
-        } 
-
-        
+        }   
     }
