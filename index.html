@@ -37,7 +37,7 @@
                 <a href="https://github.com/alanar86" target="_blank"><i class='bx bxl-github' ></i></a>
                 <a href="https://www.youtube.com/channel/UCXXxstONgNcd9ODAKYnWI8Q" target="_blank"><i class='bx bxl-youtube'></i></a>
             </div>
-            <a href="https://drive.google.com/file/d/1dPPKgC7iJY2gSQZx0y-Vs-vkiAqhaFtU/view?usp=sharing" target="_blank" class="btn">Ver CV</a>
+            <a href="https://brainblox/files/alanarias_cv2023.pdf" download="alanarias_cv2023.pdf" target="_blank" class="btn">Descargar CV</a>
         </div>
         <div class="profession-container">
             <div class="profession-box">
@@ -186,16 +186,16 @@
 <!-- Contact Section -->
 <section class="contact" id="contact">
     <h2 class="heading"><span>Contacto</span></h2>
-    <form action="#">
+    <form action="/enviar" method="post">
         <div class="input-box">
-            <input type="text" placeholder="Nombre">
-            <input type="email" placeholder="Email">
+            <input type="text" name="nombre" placeholder="Nombre">
+            <input type="email" name="email" placeholder="Email">
         </div>
         <div class="input-box">
-            <input type="number" placeholder="Teléfono">
-            <input type="text" placeholder="Asunto">
+            <input type="number" name="telefono" placeholder="Teléfono">
+            <input type="text" name="asunto" placeholder="Asunto">
         </div>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje"></textarea>
+        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Tu mensaje"></textarea>
         <input type="submit" value="Enviar mensaje" class="btn">
     </form>
   </section>
