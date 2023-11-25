@@ -17,16 +17,16 @@ app.post('/enviar', (req, res) => {
 
     // Configuración de Nodemailer con tu email
     const transporter = nodemailer.createTransport({
-        service: 'gmail',
+        service: 'gmail', // Asumo que estás usando Gmail, pero esto puede cambiar dependiendo de tu proveedor de correo
         auth: {
-            user: 'aarias.edev@gmail.com',
-            pass: 'tucontraseña' // ¡Cambia esto a tu contraseña real!
+            user: 'aarias@brainblox.com',
+            pass: process.env.EMAIL_PASSWORD // Usa la contraseña desde las variables de entorno por seguridad
         }
     });
 
     const mailOptions = {
         from: email,
-        to: 'aarias.edev@gmail.com',
+        to: 'aarias@brainblox.com',
         subject: `Asunto: ${asunto} - De: ${nombre}`,
         text: `Nombre: ${nombre}\nEmail: ${email}\nTeléfono: ${telefono}\nMensaje: ${mensaje}`
     };
@@ -44,3 +44,4 @@ app.post('/enviar', (req, res) => {
 app.listen(port, () => {
     console.log(`Servidor corriendo en el puerto ${port}`);
 });
+

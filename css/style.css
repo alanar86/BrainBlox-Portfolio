@@ -237,7 +237,7 @@ section{
     transform: rotate(calc(360deg / 4 * var(--i)));
     transform-origin: 384px;
     background: var(--bg-color);
-    padding: 13px o;
+    padding: 15px 0;
 }
 
 .home .profession-box .profession:nth-child(1) i{
@@ -249,7 +249,7 @@ section{
 }
 
 .home .profession-box .profession:nth-child(3) i{
-    margin-left: 33px;
+    margin-left: 0;
 }
 
 .home .profession-box .profession:nth-child(4) i {
@@ -287,8 +287,6 @@ section{
     border-bottom: 384px solid var(--main-color);
     border-left: 384px solid transparent;
 }
-
-
 
 .home-img {
     position: absolute;  
